@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF2F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚡"
+                android:textSize="48sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bill Details"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#1B5E20"/>
+
+        </LinearLayout>
+
+        <!-- DETAIL CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="22dp"
+            android:elevation="6dp">
+
+            <!-- MONTH -->
+
+            <TextView
+                android:id="@+id/tvDetailMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month : January"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#1B5E20"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- UNIT -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electricity Unit"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etDetailUnit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#F5F5F5"
+                android:padding="12dp"
+                android:inputType="number"
+                android:textSize="17sp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- REBATE -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rebate Percentage"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/etDetailRebate"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#F5F5F5"
+                android:padding="12dp"
+                android:inputType="number"
+                android:textSize="17sp"
+                android:layout_marginBottom="25dp"/>
+
+            <!-- TOTAL -->
+
+            <TextView
+                android:id="@+id/tvDetailTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Charges : RM 120"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- FINAL -->
+
+            <TextView
+                android:id="@+id/tvDetailFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Final Cost : RM 115"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="25dp"/>
+
+            <!-- UPDATE BUTTON -->
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="UPDATE RECORD"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:backgroundTint="#2E7D32"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
+
+        <!-- DELETE BUTTON -->
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="DELETE RECORD"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
