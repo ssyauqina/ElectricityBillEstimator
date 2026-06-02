@@ -12,7 +12,7 @@
         android:orientation="vertical"
         android:padding="22dp">
 
-        <!-- HEADER SECTION -->
+        <!-- HEADER -->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -69,7 +69,7 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="25dp"/>
 
-            <!-- CIRCULAR PROFILE IMAGE -->
+            <!-- PROFILE IMAGE -->
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/imageProfile"
@@ -86,7 +86,7 @@
                 app:strokeColor="#2E7D32"
                 app:strokeWidth="3dp"/>
 
-            <!-- FULL NAME CARD -->
+            <!-- FULL NAME -->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -115,7 +115,7 @@
 
             </LinearLayout>
 
-            <!-- STUDENT ID CARD -->
+            <!-- STUDENT ID -->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -144,7 +144,7 @@
 
             </LinearLayout>
 
-            <!-- FACULTY CARD -->
+            <!-- FACULTY -->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -172,7 +172,7 @@
 
             </LinearLayout>
 
-            <!-- PROGRAMME CARD -->
+            <!-- PROGRAMME -->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -200,19 +200,21 @@
 
             </LinearLayout>
 
-            <!-- GITHUB BUTTON -->
+            <!-- GITHUB -->
 
             <TextView
+                android:id="@+id/tvGithub"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="🔗 View GitHub Repository"
-                android:autoLink="web"
+                android:text="🔗 View GitHub Repository&#10;https://github.com/ssyauqina/ElectricityBillEstimator"
                 android:textColor="#1565C0"
                 android:textStyle="bold"
                 android:textSize="18sp"
-                android:padding="16dp"
                 android:gravity="center"
+                android:padding="16dp"
                 android:background="#E3F2FD"
+                android:clickable="true"
+                android:focusable="true"
                 android:layout_marginBottom="35dp"/>
 
             <!-- HOW TO USE -->
@@ -229,7 +231,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1. Select the month.\n\n2. Enter electricity unit usage.\n\n3. Adjust rebate percentage.\n\n4. Press CALCULATE button.\n\n5. Save the bill record.\n\n6. Press VIEW HISTORY to view saved records.\n\n7. Tap bill card to view detail information or delete record."
+                android:text="1. Select your billing month.\n\n2. Enter electricity usage (1–1000 kWh).\n\n3. Adjust rebate percentage.\n\n4. Press CALCULATE to generate the bill.\n\n5. Press SAVE RECORD to store the bill in Firebase.\n\n6. Press VIEW HISTORY to view all saved records.\n\n7. Tap any bill card to view detailed information or delete a record."
                 android:textSize="18sp"
                 android:textColor="#424242"
                 android:lineSpacingExtra="8dp"
